@@ -20,7 +20,7 @@ public class Person implements Comparable<Person>{
         if (this.lastName == null && o.lastName != null) return 1;
         if (this.lastName != null && o.lastName == null) return -1;
         if (this.lastName.compareToIgnoreCase(o.lastName)==0){
-            if (this.firstName.compareToIgnoreCase(o.lastName)==0){
+            if (this.firstName.compareToIgnoreCase(o.firstName)==0){
                 return (this.age.compareTo(o.age));
             }
             return (this.firstName.compareTo(o.firstName));
